@@ -1,0 +1,21 @@
+/*WAP to print the sum of given number 
+and its reverse*/
+#include<stdio.h>
+int main(){
+    int n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    int r=0;
+    int sumNum=n;
+    int sum;
+    while(n!=0){
+        r*=10;
+        r=r+(n%10);
+        n=n/10;
+
+    }
+  
+    sum=r+sumNum;
+    printf("sum of number and its reverse is:%d",sum);
+    return 0;
+}
